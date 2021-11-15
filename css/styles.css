@@ -1,0 +1,102 @@
+/*--resets--*/
+html, body {
+  height: 100%;
+  width: 100%;
+}
+html, body, h1, h2, p 
+{
+  margin: 0;
+  padding: 0;
+}
+/*--*/
+body {
+  background-color: rgb(1, 105, 254);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+/*----*/
+
+.head,
+.content1,
+.content2,
+.btn
+{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.head {
+  text-align: center;
+}
+
+.description,
+.headline
+{
+  width: 300px;
+  border: 15px;
+  padding: 1px;
+  
+  text-align: left;
+}
+.description
+{
+  width: 250px;
+}
+
+.test-h {
+  display: flex;
+  margin-top: 20px;
+  
+}
+.part1 {
+font-size: 150px;
+font-weight: bold;
+
+   
+}
+.part2
+{
+  background-color: rgb(5, 93, 220);
+  
+}
+.part3
+{
+  background-color: rgb(14, 60, 125);
+}
+.part4{
+  background-color: rgb(34, 37, 42);
+}
+
+.part2, .part3, .part4 {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin-right: 250px;
+  
+}
+
+.part1, .part2, .part3, .part4
+{
+  transform: rotate(-8deg);
+  
+}
+
+.btn {
+ 
+  background-color: rgb(32, 36, 40);
+  color: white;
+  padding: 7px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px;
+  font-size: 12px;
+  margin: 15px;
+}
+.col
+{
+  margin: 10px;
+}
+
