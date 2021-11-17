@@ -4,7 +4,7 @@ html, body {
   width: 100%;
   font-family: 'Roboto Black';
 }
-html, h1, h2, h3, h4, ul, li, p {
+html, body, h1, h2, h3, h4, ul, li, p {
   margin: 0;
   padding: 0;
 }
@@ -21,9 +21,15 @@ html, h1, h2, h3, h4, ul, li, p {
 {
   display:flex;
 }
-#reasons 
+
+#reasons
 {
   justify-content: center;
+}
+#reasons, .cta-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #reasons header > .title 
 {
@@ -139,7 +145,9 @@ header .slogan {
 #reasons .content .col {
   width: 33.3%;
 }
-#reasons .cta-btn {
+
+.cta-btn {
+  display: inline-block;
   padding: 15px 20px;
   border-radius: 25px;
   background-color: #212529;
@@ -147,7 +155,4 @@ header .slogan {
   text-decoration: none;
   text-transform: uppercase;
   font-size: small;
-  position: absolute;
-  justify-self: center;
-  transform: translateX(450px);
 }
