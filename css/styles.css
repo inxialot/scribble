@@ -2,101 +2,152 @@
 html, body {
   height: 100%;
   width: 100%;
+  font-family: 'Roboto Black';
 }
-html, body, h1, h2, p 
-{
+html, h1, h2, h3, h4, ul, li, p {
   margin: 0;
   padding: 0;
 }
-/*--*/
-body {
-  background-color: rgb(1, 105, 254);
-  color: white;
-  font-family: Arial, sans-serif;
+@font-face {
+  src: url(../fonts/Roboto-Black.ttf);
+  font-family: 'Roboto Black';
 }
-/*----*/
 
-.head,
-.content1,
-.content2,
-.btn
+/*--commons--*/
+#reasons,
+#reasons header,
+#reasons .content,
+#reasons header > .title
 {
-  display: flex;
+  display:flex;
+}
+#reasons 
+{
   justify-content: center;
+}
+#reasons header > .title 
+{
+  flex-direction: column;
+}
+#reasons header > .title {
+  align-items: center;
+}
+#reasons .content {
+  flex-wrap: wrap;
+}
+header .slogan {
+  margin-left: auto;
+}
+#reasons header > .title span 
+{
+  display: block;
+}
+#reasons .wrapper 
+{
+  width: 60%;
   
 }
-
-.head {
-  text-align: center;
+/*--details--*/
+#reasons {
+  background-color: #0169fe;
+  color: white;
 }
-
-.description,
-.headline
-{
+.slogan .title {
+  display: block;
   width: 300px;
-  border: 15px;
-  padding: 1px;
   
-  text-align: left;
+  transform: translateX(-180px);
+  
 }
-.description
-{
-  width: 250px;
+.slogan .description {
+  transform: translateX(-180px);
+  
 }
-
-.test-h {
+#reasons .description {
+  font-family: 'Roboto-Black';
+  font-weight: 800;
+}
+.description {
+  color: rgba(255, 255, 255, 0.55);
+  width: 280px;
+  justify-content: left;
+  text-align: left; 
+}
+.col .part-1 {
+  color: black;
+}
+#reasons header {
+  padding: 30px 0;
+  margin-bottom: 50px;
+}
+#reasons header h1 {
+  text-transform: uppercase;
+}
+#reasons header .title .part-1 {
+  font-size: 150px;
+  z-index: 1;
+  position: absolute;
+  transform: translateX(-190px) translateY(-35px);
+  font-family: sans-serif;
+  font-weight: 750;
+}
+#reasons header .title .part-2 {
+  background-color: rgba(25,25,25,.15);
+  padding: 3px 30px;
+  border-radius: 3px;
+  transform: translateX(-20px);
+}
+#reasons header .title .part-3 {
+  background-color: rgba(25,25,25,.57);
+  padding: 4px 30px;
+  border-radius: 3px;
+  margin-top: 5px;
+  transform: translateX(10px);
+}
+#reasons header .title .part-4 {
+  background-color: #222529;
+  padding: 1px 20px;
+  border-radius: 3px;
+  margin-top: 5px;
+  transform: translateX(10px);
+}
+#reasons header > .title {
+  transform: rotate(-10deg);
+  width: 550px;
+  
+}
+#reasons header > .title {
+  margin-left: 50px;
+}
+.col .title {
   display: flex;
-  margin-top: 20px;
-  
+  font-size: 20px;
 }
-.part1 {
-font-size: 150px;
-font-weight: bold;
-
-   
-}
-.part2
-{
-  background-color: rgb(5, 93, 220);
-  
-}
-.part3
-{
-  background-color: rgb(14, 60, 125);
-}
-.part4{
-  background-color: rgb(34, 37, 42);
-}
-
-.part2, .part3, .part4 {
-  margin: 5px;
-  padding: 10px;
-  border-radius: 5px;
+.col .title span {
   display: flex;
-  justify-content: center;
-  margin-right: 250px;
-  
 }
-
-.part1, .part2, .part3, .part4
-{
-  transform: rotate(-8deg);
-  
+.col .title .part-1 {
+  position: relative;
+  transform: translateY(-12px);
+  font-size: 50px;
 }
-
-.btn {
- 
-  background-color: rgb(32, 36, 40);
+.col .title .part-2 {
+ text-transform: uppercase;
+ font-size: 15px;
+ letter-spacing: 2px;
+}
+#reasons .content .col {
+  width: 33.3%;
+}
+#reasons .cta-btn {
+  padding: 15px 20px;
+  border-radius: 25px;
+  background-color: #212529;
   color: white;
-  padding: 7px;
   text-decoration: none;
-  display: inline-block;
-  border-radius: 15px;
-  font-size: 12px;
-  margin: 15px;
+  text-transform: uppercase;
+  font-size: small;
+  position: absolute;
+  justify-self: center;
+  transform: translateX(450px);
 }
-.col
-{
-  margin: 10px;
-}
-
